@@ -1,0 +1,159 @@
+.help {
+  position: relative;
+  font-size: 24px;
+  width: 1117px;
+  height: 840px;
+
+  background: #f4f9e2;
+}
+
+.help__logotip-one {
+  position: absolute;
+  top: 27px;
+  left: 179px;
+}
+
+.logotip-one {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 484px;
+  height: 27px;
+
+  font-family: Larsseit;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+
+  color: #62d0df;
+}
+
+.help__logotip-two {
+  position: absolute;
+  top: 241px;
+  left: 179px;
+}
+
+.logotip-two {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 484px;
+  height: 64px;
+
+  font-family: Larsseit;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+
+  color: #62d0df;
+}
+
+.help__head {
+  position: absolute;
+  top: 305px;
+  left: 179px;
+}
+
+.head-one {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 484px;
+  height: 167px;
+
+  font-family: Larsseit;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  
+  color: #22356f;
+  border: 1px solid black;
+}
+
+.help__text {
+  position: absolute;
+  top: 491px;
+  left: 179px;
+}
+
+.text-one {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 469px;
+  height: 161px;
+
+  font-family: Larsseit;
+  font-size: 24px;
+  line-height: 42px;
+  
+  color: #22356f;
+}
+
+.head__questions {
+  position: absolute;
+  bottom: 75px;
+  left: 179px;
+}
+
+.questions__one {
+  width: 150px;
+  height: 50px;
+  background-color: #f9b640;
+  border: none;
+  padding: 0;
+
+  font-family: Larsseit;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.questions__two {
+  width: 150px;
+  height: 50px;
+  margin-left: 38px;
+  padding: 0;
+  border: none;
+
+  background-color: #f4f9e2;
+
+  font-family: Larsseit;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #f9b640;
+  text-transform: uppercase;
+}
+
+.contact-button {
+
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 1159px;
+  top: 27px;
+
+  background: #62d0df;
+  border-radius: 50px;
+
+  &__link {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    font-family: Larsseit;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+}
