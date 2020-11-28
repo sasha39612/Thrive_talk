@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  width: 1443px;
+  height: 80px;
+
+  background: #62d0df;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.footer__item-sign {
+  width: 9px;
+  height: 12px;
+  position: absolute;
+  left: 179px;
+  top: 34px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}
+
+.footer__item-text {
+  width: 351px;
+  height: 22px;
+  position: absolute;
+  left: 194px;
+  top: 32px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}

@@ -1,0 +1,88 @@
+.contact-us {
+  width: 1440px;
+  height: 800px;
+
+  position: relative;
+}
+
+.contact-us__block {
+  display: flex;
+}
+
+.contact-us__text {
+  width: 960px;
+  height: 800px;
+  position: relative;
+
+  background-color: #22356f;
+}
+
+.contact-us__text-link {
+  position: absolute;
+  width: 108px;
+  height: 14px;
+  left: 180px;
+  top: 103px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-us__text-head {
+  position: absolute;
+  width: 704px;
+  height: 66px;
+  left: 180px;
+  top: 347px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}
+
+.contact-us__text-jeneral {
+  position: absolute;
+  width: 579px;
+  height: 253px;
+  left: 180px;
+  top: 488px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}
+
+.contact-us__text-link-help {
+  position: absolute;
+  width: 518px;
+  height: 43px;
+  left: 180px;
+  top: 715px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+
+  color: #62d0df;
+  text-transform: uppercase;
+}
+
+.contact-us__img {
+  position: relative;
+  width: 480px;
+  height: 800px;
+}
