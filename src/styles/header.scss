@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    flex-basis: auto;
     margin: 0;
     position: absolute;
 
@@ -22,6 +23,8 @@
 
   &__link {
 
+    padding: 10px;
+    margin: -10px;
     font-family: Larsseit, sans-serif;
     font-size: 14px;
     line-height: 16px;
@@ -33,6 +36,11 @@
     z-index: 1;
   }
 
+  &__link:hover {
+    position: absolute;
+    font-weight: 600;
+  }
+
   &__list:first-child {
     padding: 0;
   }
@@ -40,11 +48,13 @@
 
 .is-active {
   color: #f4f9e2;
-  font-weight: bold;
+  font-weight: 600;
+  cursor: not-allowed;
 
   &::after {
     position: absolute;
-    top: 55px;
+    top: 20px;
+    right: 188px;
 
     display: block;
     width: 50px;
