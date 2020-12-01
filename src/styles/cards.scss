@@ -1,24 +1,49 @@
 .cards {
-  min-height: 985px;
+  min-height: 502px;
 
   position: relative;
 
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 480px);
   grid-template-rows: repeat(2, 480px);
   justify-content: center;
   justify-items: center;
 
   background: #fff;
-  margin: 0;
-  padding: 0;
+
+  padding-top: 120px;
+
+  @media (max-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 480px);
+    justify-content: center;
+    justify-items: center;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 1050px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 480px);
+    justify-content: center;
+    justify-items: center;
+    padding-top: 80px;
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 480px);
+    grid-auto-flow: row;
+    padding-top: 60px;
+  }
 }
 
 .cards__block {
   position: relative;
-  width: 340px;
+  width: 100%;
   height: 480px;
-  padding-top: 20px;
 }
 
 .cards__block--violet {
@@ -30,7 +55,7 @@
 }
 
 .cards__block--img {
-  background: url(../images/joanna-kosinska-340748.jpg) no-repeat;
+  background: url(../images/joanna-kosinska-340748.jpg) 100% 100% no-repeat;
   background-size: cover;
 
 }
@@ -48,10 +73,10 @@
 }
 
 .cards__item-box--unvisable {
-  position: absolute;
   width: 340px;
   height: 96px;
-  left: 70px;
+  margin-left: auto;
+  margin-right: auto;
 
   box-shadow: inset 0 -1px 0 #fff;
 }

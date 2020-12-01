@@ -1,0 +1,36 @@
+.nav-toggler {
+  display: none;
+
+  width: 25px;
+  height: 17px;
+
+  background-image: url(../images/Menu_closed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transform: translate(-50%, 0);
+
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translate(-50%, 0) scale(1.2);
+    cursor: pointer;
+  }
+
+  @media (max-width: 1768px) {
+    display: block;
+
+    &--active {
+      position: fixed;
+      right: 2px;
+      left: unset;
+      z-index: 3;
+
+      background-image: url(../images/Menu_open.png);
+    }
+  }
+
+  @media (max-width: 1500px) {
+    position: static;
+  }
+}

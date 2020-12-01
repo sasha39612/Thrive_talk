@@ -6,13 +6,19 @@
 
 .more-info__img {
   position: absolute;
+  top: 0;
   left: 0;
   bottom: 0;
-  max-height: 800px;
+  max-height: 840px;
   width: 37%;
 
+  @media (max-width: 1280px) {
+    width: 37%;
+    height: 100%;
+  }
+
   @media (max-width: 992px) {
-    width: 30%;
+    width: 35%;
     height: 100%;
   }
 
@@ -22,7 +28,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    height: 100vw;
+    height: 130vw;
   }
 }
 
@@ -31,18 +37,18 @@
   flex-direction: column;
   margin-left: 35%;
 
-  @media (min-width: 1040px) {
-    padding: 100px 0 40px 180px;
-    width: 900px;
+  @media (max-width: 2680px) {
+    padding: 0 1vw 40px 8vw;
+    width: 60%;
   }
 
-  @media (max-width: 992px) {
-    padding: 0 20vw 40px 5vw;
-    width: 50%;
+  @media (max-width: 995px) {
+    padding: 0 1vw 40px 5vw;
+    width: 60%;
   }
 
   @media (max-width: 768px) {
-    margin-top: 100vw;
+    // margin-top: 100vw;
     width: 100%;
     padding: 80px 30px 30px;
     text-align: center;
@@ -51,7 +57,7 @@
 }
 
 .more-info__text-head {
-  margin-top: 103px;
+  margin-top: 100px;
 
   font-family: Larsseit, sans-serif;
   font-size: 16px;
@@ -60,25 +66,11 @@
   text-transform: uppercase;
 
   color: #22356f;
-
-  @media (max-width: 992px) {
-    padding: 0 20vw 40px 5vw;
-    width: 50%;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 100vw;
-    min-width: 100px;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    margin-left: 0;
-  }
 }
 
 .more-info__text-jeneral {
   max-width: 676px;
-  margin-top: 225px;
+  margin-top: 175px;
  
   font-family: Larsseit, sans-serif;
   font-size: 36px;
@@ -86,20 +78,6 @@
   letter-spacing: -0.01em;
 
   color: #22356f;
-
-  @media (max-width: 992px) {
-    padding: 0 20vw 40px 5vw;
-    width: 50%;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 12vw;
-    min-width: 100px;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    margin-left: 0;
-  }
 }
 
 .more-info__text-jeneral-H3 {
@@ -118,17 +96,4 @@
   text-decoration: none;
 
   color: #fab63e;
-
-  @media (max-width: 992px) {
-    padding: 0 20vw 40px 5vw;
-    width: 50%;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 10vw;
-    min-width: 100px;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-  }
 }

@@ -9,20 +9,31 @@
   justify-items: center;
 
   background: #fff;
+  bottom: 0;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1440px) {
     display: grid;
-    grid-template-columns: repeat(2, 480px);
-    grid-template-rows: repeat(3, 240px);
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: repeat(2, 240px);
     justify-content: center;
     justify-items: center;
   }
 
+  @media (max-width: 1050px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 240px);
+    justify-content: center;
+    justify-items: center;
+    bottom: 0;
+  }
+
   @media (max-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(1, 480px);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 240px);
     grid-auto-flow: row;
+    bottom: 0;
 
   }
 }
