@@ -1,23 +1,24 @@
 .cards {
+  min-height: 985px;
+
   position: relative;
 
-  width: 1440px;
-  height: 960px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  grid-template-rows: repeat(2, 480px);
+  justify-content: center;
+  justify-items: center;
 
   background: #fff;
-}
-
-.cards__boxes {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-auto-flow: row;
+  margin: 0;
+  padding: 0;
 }
 
 .cards__block {
   position: relative;
-  width: 480px;
+  width: 340px;
   height: 480px;
+  padding-top: 20px;
 }
 
 .cards__block--violet {
@@ -29,7 +30,9 @@
 }
 
 .cards__block--img {
-  background: url(../images/joanna-kosinska-340748.jpg);
+  background: url(../images/joanna-kosinska-340748.jpg) no-repeat;
+  background-size: cover;
+
 }
 
 .cards__block--green {

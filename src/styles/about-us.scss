@@ -1,9 +1,17 @@
 .about-us {
-  position: relative;
-  width: 1440px;
+  max-width: 1440px;
   height: 361px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
 
   background: #fff;
+}
+
+.about-us__block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-us__head {
