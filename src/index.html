@@ -17,7 +17,7 @@
         <nav  class="header_nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#home">Home</a>
+              <a class="nav__link nav__link-home" href="#home">Home</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#about">About</a>
@@ -64,8 +64,8 @@
           </div>
 
           <div class="head__questions questions">
-            <button class="questions__one" href="#who am i">who am i</button>
-            <button class="questions__two" href="#what do i do">what do i do</button>
+            <a class="questions__one" href="#who am i">who am i</a>
+            <a class="questions__two" href="#what do i do">what do i do</a>
           </div>
         </div>
 
@@ -107,7 +107,7 @@
           </p>
         </div>
 
-        <p class="about-us__head-next-block">we can help you with</p>
+        <p class="about-us__head-next-block" id="service">we can help you with</p>
       </section>
 
       <section class="we-help">
@@ -136,7 +136,7 @@
         </div>
       </section>
 
-      <section class="cards">
+      <section class="cards" id="who am i">
         <div class="cards__block cards__block--violet">
           <div class="cards__item-box--unvisable"></div>
           <div class="cards__item-dot"></div>
@@ -174,7 +174,7 @@
         </div>
       </section>
 
-      <section class="text-cards">
+      <section class="text-cards" id="blog">
         <div class="text-cards__block text-cards__block--nutritional">
           <p class="text-cards__item-head">Nutritional Plans</p>
           <p class="text-cards__item-text">
@@ -238,11 +238,11 @@
             the U.S. population age 18 and older in a given year. We at
             <span class="more-info__text-jeneral-H3">ThriveTalk</span> can help you.
           </p>
-          <a class="more-info__text-link" href="#get_help_now">get help now</a>
+          <a class="more-info__text-link" href="tel:+555 283 784 333">get help now</a>
         </div>
       </section>
 
-      <section class="contact-us">
+      <section class="contact-us" id="what do i do">
         <div class="contact-us__text">
           <a class="contact-us__text-link" href="#contact-us">contact us</a>
           <p class="contact-us__text-head">Ready. Set. Smile</p>
@@ -250,7 +250,7 @@
             Take the free online assessment to see if you are a candidate and
             get started on your journey.
           </p>
-          <a class="contact-us__text-link-help" href="#get_help_now">get help now</a>
+          <a class="contact-us__text-link-help" href="tel:+555 283 784 333">get help now</a>
         </div>
 
         <img
@@ -277,8 +277,11 @@
           </div>
 
           <div class="some-info__block text-cards__block--nutritional">
-            <p class="some-info__item-head"><a name="get_help_now"></a>enfold health</p>
-            <p class="some-info__item-text">Main Street 1, Olcott<br>Buffalo, United States<br><br>+555 283 784 333
+            <p class="some-info__item-head">enfold health</p>
+            <p class="some-info__item-text">
+              Main Street 1, Olcott<br>
+              Buffalo, United States<br><br>
+              <a href="tel:+555 283 784 333">+555 283 784 333</a>
             </p>
             <a
               href="mailto:office@enfold-health.com"
