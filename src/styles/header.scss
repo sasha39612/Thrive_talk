@@ -1,5 +1,4 @@
 .nav {
-
   position: relative;
 
   &__list {
@@ -94,4 +93,150 @@
   &__list:first-child {
     padding: 0;
   }
+}
+
+.toggler {
+  display: none;
+
+  &__button {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .toggler {
+    position: absolute;
+    opacity: 0;
+    top: -100%;
+
+    &__button {
+      display: block;
+      position: relative;
+      top: 6vh;
+      left: 45vw;
+
+      width: 40px;
+      height: 30px;
+
+      cursor: pointer;
+      z-index: 3;
+    }
+  }
+
+  .toggler__span,
+  .toggler__span::before,
+  .toggler__span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: #62d0df;
+
+    transition-duration: 0.3s;
+    z-index: 3;
+  }
+
+  .toggler__span::before {
+    content: " ";
+    top: -8px;
+  }
+
+  .toggler__span::after {
+    content: " ";
+    top: 8px;
+  }
+
+  .nav__list {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    // position: absolute;
+    visibility: hidden;
+    // top: -100%;
+    // left: 50%;
+    // transform: translate(-30%, 0);
+
+    // width: 60vw;
+    // height: 10vh;
+
+    padding: 12vh 0 0;
+    margin-left: 0;
+
+    list-style: none;
+
+    // background-color: green;
+    // opacity: 0.8;
+
+    transition-duration: 0.5s;
+    z-index: 2;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+  }
+
+  .nav__link {
+
+    @media (max-width: 570px) {
+      position: relative;
+      padding: 15px 0;
+
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 450px) {
+      padding: 10px 0;
+
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: blue;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.nav__toggler:checked ~ .toggler__button > .toggler__span {
+  transform: rotate(45deg);
+  background-color: #62d0df;
+}
+
+.nav__toggler:checked ~ .toggler__button > .toggler__span::before {
+  top: 0;
+  transform: rotate(0);
+  background-color: #62d0df;
+}
+
+.nav__toggler:checked ~ .toggler__button > .toggler__span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #62d0df;
+}
+
+.nav__toggler:checked ~ .nav__list {
+  visibility: visible;
+  top: -20px;
+}
+
+.nav__link:checked ~ .nav__list {
+  visibility: hidden;
+  top: -1000%;
 }

@@ -6,6 +6,11 @@
   overflow: hidden;
 
   background: #fff;
+
+  @media (max-width: 1400px) {
+    background: url(../images/linkedin-sales-navigator-406825.jpg) no-repeat;
+    background-size: cover;
+  }
 }
 
 .help-imag__rectangle--white {
@@ -21,7 +26,7 @@
   border-radius: 312px;
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
 
-  @media (max-width: 992px) {
+  @media (max-width: 1400px) {
     display: none;
   }
 }
@@ -42,7 +47,7 @@
 
   z-index: 1;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1400px) {
     display: none;
   }
 }
@@ -59,7 +64,7 @@
 
   z-index: 0;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1400px) {
     display: none;
   }
 }
@@ -76,11 +81,8 @@
 
   color: #62d0df;
 
-  background: #f4f9e2;
-
-  @media (max-width: 992px) {
-    background: url(../images/linkedin-sales-navigator-406825.jpg) no-repeat;
-    background-size: cover;
+  @media (min-width: 1400px) {
+    background: #f4f9e2;
   }
 
   @media (max-width: 768px) {
@@ -104,6 +106,8 @@
   @media (max-width: 768px) {
     padding: 8vw 0 10vh 2vh;
     margin: 0;
+    width: 100px;
+
   }
 }
 
@@ -280,31 +284,31 @@
     width: 150px;
     height: 50px;
     left: 75vw;
-    bottom: 100vh;
+    top: 4vh;
   }
 
   @media (max-width: 992px) {
     position: absolute;
     width: 110px;
     height: 35px;
-    left: 80vw;
-    bottom: 100vh;
+    left: 85vw;
+    top: 4vh;
   }
 
   @media (max-width: 768px) {
     position: absolute;
     width: 110px;
     height: 35px;
-    left: 68vw;
-    bottom: 100vh;
+    left: 80vw;
+    top: 4vh;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
     position: absolute;
     width: 110px;
     height: 35px;
-    left: 60vw;
-    bottom: 101vh;
+    left: 65vw;
+    top: 4vh;
   }
 
   &:hover {

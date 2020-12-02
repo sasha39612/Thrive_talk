@@ -1,5 +1,6 @@
 @import "utils";
 @import "fonts";
+@import "mixin";
 @import "typography";
 @import "header";
 @import "help-you";
@@ -13,7 +14,7 @@
 @import "contact-us";
 @import "some-info";
 @import "footer";
-// @import "togler";
+@import "togler";
 
 body {
   background: $c-gray;

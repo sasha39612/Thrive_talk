@@ -1,36 +1,37 @@
-.nav-toggler {
-  display: none;
+%line {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
 
-  width: 25px;
-  height: 17px;
-
-  background-image: url(../images/Menu_closed.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  transform: translate(-50%, 0);
-
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: translate(-50%, 0) scale(1.2);
-    cursor: pointer;
+.toggler {
+  position: relative;
+  @extend %line;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    transition-duration: 0.3s;
+    @extend %line;
   }
-
-  @media (max-width: 1768px) {
-    display: block;
-
-    &--active {
-      position: fixed;
-      right: 2px;
-      left: unset;
-      z-index: 3;
-
-      background-image: url(../images/Menu_open.png);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    transition-duration: 0.3s;
+    @extend %line;
   }
-
-  @media (max-width: 1500px) {
-    position: static;
+  &--open {
+    transform: rotate(45deg);
+  }
+  &--open::before {
+    top: 0;
+  }
+  &--open::after {
+    top: 0;
+    transform: rotate(90deg);
   }
 }
