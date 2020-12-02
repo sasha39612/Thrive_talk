@@ -77,7 +77,7 @@
 
   font-family: Larsseit, sans-serif;
   line-height: 27px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
 
   color: #62d0df;
 
@@ -89,12 +89,16 @@
     background: #f4f9e2;
   }
 
+  @media (max-width: 450px) {
+    height: 120vh;
+  }
 }
 
 .help__logotip-one {
-  padding-top: 27px;
+  padding-top: 48px;
   margin-left: 179px;
-  @media (max-width: 768px) {
+  font-size: 36px;
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -103,7 +107,7 @@
   margin-top: 187px;
   margin-left: 179px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     padding: 8vw 0 10vh 2vh;
     margin: 0;
     width: 100px;
@@ -112,22 +116,23 @@
 }
 
 .help__head {
-  margin-top: 55px;
+  margin-top: 35px;
   margin-left: 179px;
   display: flex;
   justify-content: flex-start;
 
-  width: 484px;
+  width: 544px;
 
   font-family: Larsseit, sans-serif;
-  font-size: 48px;
-  line-height: 53px;
-  letter-spacing: -0.04em;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 
   color: #22356f;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     padding-top: 10vw;
     width: 90%;
     min-width: 100px;
@@ -141,22 +146,29 @@
     min-width: 100px;
     text-align: center;
     margin-left: 0;
+
+    padding-right: 1vw;
+    padding-left: 1vw;
+
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
   }
 }
 
 .help__text {
-  margin-top: 65px;
+  margin-top: 35px;
   margin-left: 179px;
 
-  width: 469px;
+  width: 499px;
 
   font-family: Larsseit, sans-serif;
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 21px;
+  line-height: 38px;
   
   color: #22356f;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: 15vw 0;
     min-width: 100px;
     width: 100%;
@@ -166,15 +178,18 @@
 }
 
 .head__questions {
-  margin: 63px 0 0 179px;
+  margin: 43px 0 0 179px;
   cursor: pointer;
 
-  @media (max-width: 768px) {
-    margin-top: 10vw;
+  @media (max-width: 800px) {
+    margin-top: 4vw;
     width: 100%;
     min-width: 100px;
     margin-left: 0;
     text-align: center;
+
+    font-size: 21px;
+    line-height: 28px;
   }
 }
 
@@ -185,7 +200,7 @@
   background-color: #f4f9e2;
 
   font-family: Larsseit, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -199,10 +214,10 @@
     width: 130px;
     height: 50px;
     margin-top: 1vw;
-    // width: 100%;
     min-width: 100px;
     margin-left: 1vw;
     text-align: center;
+    font-size: 14px;
   }
   
 
@@ -230,7 +245,7 @@
   background-color: #f4f9e2;
 
   font-family: Larsseit, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -249,6 +264,8 @@
     min-width: 100px;
     margin-left: 1vw;
     text-align: center;
+
+    font-size: 14px;
   }
 
   &:hover {
@@ -277,7 +294,7 @@
 
   z-index: 1;
 
-  transition: transform 1s;
+  transition: transform 0.3s;
 
   @media (max-width: 1440px) {
     position: absolute;
@@ -291,7 +308,7 @@
     position: absolute;
     width: 110px;
     height: 35px;
-    left: 85vw;
+    left: 80vw;
     top: 4vh;
   }
 
@@ -303,7 +320,7 @@
     top: 4vh;
   }
 
-  @media (max-width: 570px) {
+  @media (max-width: 540px) {
     position: absolute;
     width: 110px;
     height: 35px;
@@ -317,23 +334,29 @@
 
   &__link {
     position: absolute;
-    padding: 20px 30px;
+    padding: 20px 25px;
 
     font-family: Larsseit, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
     text-align: center;
-
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    transition: transform 1s;
+    transition: transform 0.3s;
 
     color: #fff;
 
     @media (max-width: 992px) {
-      font-size: 12px;
+      font-size: 11px;
       position: absolute;
-      padding: 10px 20px;
+      padding: 12px 17px;
+    }
+
+    @media (max-width: 658px) {
+      font-size: 11px;
+      position: absolute;
+      padding: 12px 17px;
     }
   }
 

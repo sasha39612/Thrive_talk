@@ -48,35 +48,53 @@
 .text-cards__item-head {
   width: 50%;
   height: 36px;
-  margin-left: 6vw;
+  margin-left: 4vw;
   margin-top: 55px;
 
   font-family: Larsseit, sans-serif;
   font-size: 28px;
   line-height: 33px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
 
   color: #22356f;
+  
+  @media (max-width: 1050px) {
+    margin-left: 10vw;
+  }
 
   @media (max-width: 768px) {
     margin-left: 20vw;
   }
+
+  @media (max-width: 450px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .text-cards__item-text {
-  width: 50%;
+  width: 60%;
   height: 84px;
-  margin-left: 6vw;
+  margin-left: 4vw;
   margin-top: 28px;
 
   font-family: Larsseit, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 
   color: rgba(34, 53, 111, 0.5);
 
+  @media (max-width: 1050px) {
+    margin-left: 10vw;
+  }
+
   @media (max-width: 768px) {
     margin-left: 20vw;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+    line-height: 22px;
   }
 }

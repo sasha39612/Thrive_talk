@@ -10,20 +10,25 @@
     position: absolute;
 
     height: 14px;
-    margin-left: 607px;
-    margin-top: 38px;
+    margin-left: 577px;
+    margin-top: 41px;
 
     @media (max-width: 1440px) {
       margin-left: 40vw;
       margin-top: 5vh;
     }
 
-    @media (max-width: 1440px) {
-      margin-left: 35vw;
+    @media (max-width: 990px) {
+      margin-left: 43vw;
       margin-top: 5vh;
     }
 
     @media (max-width: 768px) {
+      margin-left: 23vw;
+      margin-top: 5vh;
+    }
+
+    @media (max-width: 540px) {
       display: none;
     }
 
@@ -37,14 +42,20 @@
 
     margin: 15px;
     font-family: Larsseit, sans-serif;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 22px;
 
     text-decoration: none;
 
     color: #22356f;
 
     z-index: 1;
+
+    @media (max-width: 990px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 10px;
+    }
   }
 
   &__link:hover {
@@ -103,7 +114,7 @@
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 540px) {
 
   .nav {
     display: flex;

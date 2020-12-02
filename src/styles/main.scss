@@ -17,9 +17,10 @@
 @import "togler";
 
 body {
-  background: $c-gray;
+  // background: $c-gray;
 
   // background-color: #f4f9e2;
+  background-color: #fff;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
   max-width: 1440px;
 
   @media (min-width: 1440px) {
-    box-shadow: 0 0 65px 0 rgba(0,0,0,0.9);
+    box-shadow: 0 0 65px 0 rgba(0,0,0,0.2);
     margin: 0 auto;
   }
 }
