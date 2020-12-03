@@ -64,23 +64,26 @@
 
   color: #22356f;
 
-  @media (max-width: 992px) {
+  @media (max-width: 999px) {
     width: 100%;
     margin-left: 0;
+    padding-right: 20px;
   }
 
   @media (max-width: 768px) {
     margin-top: 5vw;
-    min-width: 100px;
-    max-width: 768px;
-    width: 100%;
     text-align: center;
+    min-width: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 10px;
-    margin-left: 0;
   }
+
   @media (max-width: 540px) {
     font-size: 20px;
     line-height: 28px;
+    padding: 0 10px;
   }
 }
 
@@ -106,10 +109,7 @@
     width: 100%;
     padding: 0;
     text-align: center;
-    margin-left: 0;
-  }
-
-  @media (max-width: 768px) {
-    margin: 4vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
