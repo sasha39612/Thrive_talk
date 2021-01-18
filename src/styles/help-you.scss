@@ -95,9 +95,14 @@
 }
 
 .help__logotip-one {
-  padding-top: 48px;
+  padding-top: 7vh;
   margin-left: 179px;
   font-size: 36px;
+
+  @media (max-width: 990px) {
+    padding-top: 10vh;
+  }
+
   @media (max-width: 800px) {
     display: none;
   }
@@ -108,10 +113,17 @@
   margin-left: 179px;
 
   @media (max-width: 800px) {
-    padding: 8vw 0 10vh 2vh;
+    padding: 10vh 0 10vh 20vh;
     margin: 0;
     width: 100px;
+  }
 
+  @media (max-width: 768px) {
+    padding: 9vh 0 10vh 8vh;
+  }
+
+  @media (max-width: 650px) {
+    padding: 9vh 0 10vh 4vh;
   }
 }
 
@@ -301,7 +313,7 @@
     width: 150px;
     height: 50px;
     left: 75vw;
-    top: 4vh;
+    top: 5vh;
   }
 
   @media (max-width: 992px) {
@@ -309,15 +321,15 @@
     width: 110px;
     height: 35px;
     left: 80vw;
-    top: 4vh;
+    top: 9vh;
   }
 
   @media (max-width: 768px) {
     position: absolute;
     width: 110px;
     height: 35px;
-    left: 80vw;
-    top: 4vh;
+    left: 75vw;
+    top: 8vh;
   }
 
   @media (max-width: 540px) {
@@ -325,7 +337,7 @@
     width: 110px;
     height: 35px;
     left: 65vw;
-    top: 4vh;
+    top: 7vh;
   }
 
   &:hover {
