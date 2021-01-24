@@ -1,46 +1,51 @@
-.nav {
-  position: relative;
+.header {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 30px;
+  left: 179px;
+  right: 5vw;
 
+  @media (max-width: 800px) {
+    left: 5vw;
+    right: 5vw;
+  }
+}
+
+.heder__logotip {
+  font-family: Larsseit, sans-serif;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+
+  color: #62d0df;
+
+  font-size: 36px;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 370px) {
+    font-size: 20px;
+  }
+}
+
+.nav {
   &__list {
     display: flex;
     justify-content: space-between;
     align-content: center;
     flex-basis: auto;
 
-    position: absolute;
-
-    height: 14px;
-    margin-left: 577px;
-    margin-top: 3vh;
-
-    @media (max-width: 1440px) {
-      margin-left: 40vw;
-      margin-top: 4vh;
-    }
-
-    @media (max-width: 990px) {
-      margin-left: 43vw;
-      margin-top: 7vh;
-    }
-
-    @media (max-width: 768px) {
-      margin-left: 29vw;
-      margin-top: 7vh;
-    }
-
     @media (max-width: 570px) {
       display: none;
     }
-
   }
 
   &__item {
     display: flex;
-    padding-top: 1vw;
-
-    @media (max-width: 990px) {
-      padding-top: 3vw;
-    }
   }
 
   &__link {
@@ -59,7 +64,6 @@
     @media (max-width: 990px) {
       font-size: 18px;
       line-height: 22px;
-      margin: 10px;
     }
   }
 
@@ -93,16 +97,12 @@
   }
 
   .toggler {
-    position: absolute;
     opacity: 0;
-    top: -100%;
 
     &__button {
       display: block;
-      position: relative;
-      margin-top: -50px;
+      margin-top: 7vw;
       padding: 0;
-      top: 12vh;
 
       left: 50%;
       transform: translate(-30%, 0);
@@ -149,8 +149,8 @@
     left: 50%;
     transform: translate(-50%, 0);
 
-    padding: 18vw 0 0;
-    margin-left: 0;
+    padding: 14vw 0 0;
+    margin-left: 10px;
 
     list-style: none;
 
@@ -161,7 +161,6 @@
   .item {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     border-radius: 20px;
     
   }
@@ -178,8 +177,6 @@
     }
 
     @media (max-width: 450px) {
-      padding: 10px 0;
-
       font-size: 16px;
       font-weight: bold;
     }
@@ -216,4 +213,54 @@
 .nav__link:checked ~ .nav__list {
   visibility: hidden;
   top: -1000%;
+}
+
+.heder__contact {
+  width: 150px;
+  height: 50px;
+
+  background: #62d0df;
+  border-radius: 50px;
+
+  z-index: 2;
+
+  transition: transform 0.3s;
+
+  @media (max-width: 992px) {
+    width: 110px;
+    height: 35px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__link {
+    position: absolute;
+    padding: 20px 25px;
+
+    font-family: Larsseit, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    transition: transform 0.3s;
+
+    color: #fff;
+
+    @media (max-width: 992px) {
+      font-size: 11px;
+      padding: 12px 15px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 12px;
+    }
+  }
+
+  &__link:hover {
+    transform: scale(1.1);
+  }
 }
